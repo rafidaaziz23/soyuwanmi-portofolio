@@ -1,30 +1,72 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
 import "../styles/book.css";
 import paper from "../assets/paper.jpg";
 
 const Book: React.FC = () => {
+  const [width, setWidth] = useState(399);
+  const [height, setHeight] = useState(526);
+  const [usePortrait, setUsePortrait] = useState(false);
+
+  useEffect(() => {
+    const updateSize = () => {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth <= 768) {
+        setUsePortrait(true);
+        // Mobile
+        setWidth(250);
+        setHeight(330);
+      } else if (screenWidth <= 1024) {
+        // Tablet
+        setWidth(350);
+        setHeight(460);
+      } else if (screenWidth <= 1366) {
+        // Laptop 13"
+        setWidth(380);
+        setHeight(500);
+      } else if (screenWidth <= 1536) {
+        // Laptop 15"-16"
+        setWidth(485); // 420
+        setHeight(635); // 550
+      } else if (screenWidth <= 1920) {
+        // Desktop 24"
+        setWidth(650); //55o
+        setHeight(847.5); //720
+      } else {
+        // Monitor besar (4K, ultrawide, dll.)
+        setWidth(750);
+        setHeight(975);
+      }
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   return (
     <div className="book-container">
       <HTMLFlipBook
         className=""
         style={{}}
-        width={437}
-        height={620}
+        width={width}
+        height={height}
         maxShadowOpacity={0.5}
         showCover={true}
         mobileScrollSupport={true}
         startPage={0}
         size="fixed"
-        minWidth={499}
-        maxWidth={665}
-        minHeight={709}
-        maxHeight={945}
+        minWidth={250}
+        maxWidth={width}
+        minHeight={330}
+        maxHeight={height}
         drawShadow={true}
         flippingTime={750}
-        usePortrait={true}
-        startZIndex={1}
-        autoSize={true}
+        usePortrait={usePortrait}
+        startZIndex={31}
+        autoSize={false}
         clickEventForward={true}
         useMouseEvents={true}
         swipeDistance={20}
