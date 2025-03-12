@@ -1,5 +1,4 @@
 import Book from "@/components/book";
-import "../styles/globals.css";
 import hero1 from "../assets/images/hero-1.png";
 import Image from "next/image";
 

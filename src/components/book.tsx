@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
-import "../styles/book.css";
-import paper from "../assets/paper.jpg";
+// import "../styles/book.css";
+// import "../styles/globals.css";
 
 const Book: React.FC = () => {
   const [width, setWidth] = useState(399);
