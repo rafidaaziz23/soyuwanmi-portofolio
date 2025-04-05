@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Book from "@/components/book";
 import pinad1 from "../assets/images/pinad-1.png";
 import Image from "next/image";
+import TypewriterDialog from "@/components/typingtext";
 
 export default function Home() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -15,10 +16,8 @@ export default function Home() {
     const sectionTop = sectionRef.current.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    // Buat scroll progress relatif terhadap viewport section
     const progress = 1 - Math.min(Math.max(sectionTop / windowHeight, 0), 1);
 
-    // Misal max gerakan 60px
     const maxTranslate = 60;
     setParallaxY(progress * maxTranslate);
   };
@@ -41,11 +40,22 @@ export default function Home() {
         className="w-full min-h-screen rounded-t-[50px] flex items-end justify-center sticky top-0 z-20 dialog mt-[50px]"
       >
         <div
-          className="w-[70vw] min-h-[25vh] mb-[50px] flex dialog-box transition-transform duration-300"
+          className="w-[70vw] min-h-[25vh] mb-[50px] flex dialog-box items-center  transition-transform duration-300"
           style={{
             transform: `translateY(${parallaxY - 30}px)`,
           }}
-        ></div>
+        >
+          <TypewriterDialog
+            texts={[
+              " Halo, namaku Soyu!",
+              " Ini adalah Portofolioku.",
+              " Ayo kita mulai petualangan!",
+              " Aku Ingin Mualaf",
+            ]}
+            typingSpeed={40}
+            onComplete={() => console.log("Dialog selesai!")}
+          />
+        </div>
 
         <div
           className="flex-1 min-h-[25vh] transition-transform duration-300"
