@@ -41,7 +41,7 @@ export default function Home() {
         className="w-full min-h-screen rounded-t-[50px] flex items-end justify-center sticky top-0 z-20 dialog mt-[50px]"
       >
         <div
-          className="w-[70vw] min-h-[25vh] flex dialog-box transition-transform duration-300"
+          className="w-[70vw] min-h-[25vh] mb-[50px] flex dialog-box transition-transform duration-300"
           style={{
             transform: `translateY(${parallaxY - 30}px)`,
           }}
