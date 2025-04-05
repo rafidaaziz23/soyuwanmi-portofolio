@@ -18,10 +18,10 @@ export default function TypewriterDialog({
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    let i = 0;
     const fullText = texts[currentIndex];
-    setDisplayedText("");
+    setDisplayedText(fullText.charAt(0));
     setIsTyping(true);
+    let i = 0;
 
     const interval = setInterval(() => {
       setDisplayedText((prev) => prev + fullText.charAt(i));
@@ -49,7 +49,7 @@ export default function TypewriterDialog({
   return (
     <div
       onClick={handleClick}
-      className="cursor-pointer text-stone-900 p-4 rounded-xl w-full max-w-xl mx-auto min-h-[100px] flex justify-start items-center"
+      className="cursor-pointer text-stone-800 p-4 rounded-xl w-full max-w-xl mx-auto min-h-[100px] flex justify-start items-center"
     >
       <p className="text-lg typingtext">{displayedText}</p>
     </div>

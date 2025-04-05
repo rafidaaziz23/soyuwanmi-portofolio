@@ -37,7 +37,7 @@ export default function Home() {
       {/* DIALOG */}
       <section
         ref={sectionRef}
-        className="w-full min-h-screen rounded-t-[50px] flex items-end justify-center sticky top-0 z-20 dialog mt-[50px]"
+        className="w-full min-h-screen rounded-t-[50px] flex items-end justify-center flex-col-reverse sm:flex-col-reverse md:flex-row  sticky top-0 z-20 dialog mt-[50px]"
       >
         <div
           className="w-[70vw] min-h-[25vh] mb-[50px] flex dialog-box items-center  transition-transform duration-300"
@@ -47,10 +47,9 @@ export default function Home() {
         >
           <TypewriterDialog
             texts={[
-              " Halo, namaku Soyu!",
-              " Ini adalah Portofolioku.",
-              " Ayo kita mulai petualangan!",
-              " Aku Ingin Mualaf",
+              "Halo, namaku Soyu!",
+              "Ini adalah Portofolioku.",
+              "Ayo kita mulai petualangan!",
             ]}
             typingSpeed={40}
             onComplete={() => console.log("Dialog selesai!")}
