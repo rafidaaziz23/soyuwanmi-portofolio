@@ -1,26 +1,66 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import Book from "@/components/book";
-import hero1 from "../assets/images/hero-1.png";
+import pinad1 from "../assets/images/pinad-1.png";
 import Image from "next/image";
 
 export default function Home() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [parallaxY, setParallaxY] = useState(0);
+
+  const handleScroll = () => {
+    if (!sectionRef.current) return;
+
+    const sectionTop = sectionRef.current.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // Buat scroll progress relatif terhadap viewport section
+    const progress = 1 - Math.min(Math.max(sectionTop / windowHeight, 0), 1);
+
+    // Misal max gerakan 60px
+    const maxTranslate = 60;
+    setParallaxY(progress * maxTranslate);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <main className="w-full">
+      {/* HERO */}
       <section className="w-full h-screen bg-pink-500 flex items-center justify-center sticky top-0 z-10 hero">
-        {/* <h2 className="text-white text-3xl font-bold hero-h2">Soyu's Days</h2> */}
-        <Image
-          src={hero1}
-          alt="Hero Image"
-          width={1000}
-          height={600}
-          className="rounded-lg shadow-lg"
-        />
+        <h2 className="text-white text-3xl font-bold hero-h2">Soyu's Days</h2>
       </section>
 
-      <section className="w-full min-h-screen bg-blue-300 rounded-t-[50px] flex items-center justify-center sticky top-0 z-20 ">
-        <h2 className="text-white text-3xl font-bold">Dialog Section</h2>
+      {/* DIALOG */}
+      <section
+        ref={sectionRef}
+        className="w-full min-h-screen rounded-t-[50px] flex items-end justify-center sticky top-0 z-20 dialog mt-[50px]"
+      >
+        <div
+          className="w-[70vw] min-h-[25vh] flex dialog-box transition-transform duration-300"
+          style={{
+            transform: `translateY(${parallaxY - 30}px)`,
+          }}
+        ></div>
+
+        <div
+          className="flex-1 min-h-[25vh] transition-transform duration-300"
+          style={{
+            transform: `translateY(${parallaxY * 0.6}px)`,
+          }}
+        >
+          <div className="flex items-end justify-center h-full mb-[-40px]">
+            <Image src={pinad1} alt="Pinad Image 1" className="bottom-0" />
+          </div>
+        </div>
       </section>
 
-      <section className="w-full min-h-screen bg-white rounded-t-[50px] sticky top-0 z-30 flex flex-col">
+      {/* BOOK */}
+      <section className="w-full min-h-screen bg-white rounded-t-[50px] sticky top-0 z-30 flex flex-col mt-[50px]">
         <div className="flex-1 flex items-center justify-center">
           <div className=" max-h-screen min-h-max w-fit drop-shadow-2xl">
             <Book />
@@ -28,7 +68,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full min-h-screen bg-teal-500 rounded-t-[50px] flex items-center justify-center sticky top-0 z-40 ">
+      {/* CONTACT */}
+      <section className="w-full min-h-screen bg-teal-500 rounded-t-[50px] flex items-center justify-center sticky top-0 z-40 mt-[50px]">
         <h2 className="text-white text-3xl font-bold">Contact Section</h2>
       </section>
     </main>
