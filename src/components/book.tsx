@@ -77,48 +77,9 @@ const Book: React.FC = () => {
         <div className="page cover"></div>
 
         {/* Page 1 - Introduction */}
-        <div className="page paper">
-          <h2>About Me</h2>
-          <p>
-            Hi! I'm Nadya Budy Tjandra, an illustrator and visual artist
-            passionate about storytelling through art. My works blend
-            creativity, emotion, and detail to create stunning visual
-            experiences.
-          </p>
-        </div>
-        <div className="page paper">
-          <h2>Artistic Style</h2>
-          <ul>
-            <li>Digital & Traditional Illustration</li>
-            <li>Character Design & Concept Art</li>
-            <li>Fantasy & Surrealism</li>
-            <li>Children’s Book Illustration</li>
-          </ul>
-        </div>
-        <div className="page paper">
-          <h2>Portfolio</h2>
-          <p>Here are some of my featured artworks:</p>
-          <ul>
-            <li>
-              <strong>Project A:</strong> A fantasy-themed character series
-            </li>
-            <li>
-              <strong>Project B:</strong> Illustrated book covers and posters
-            </li>
-            <li>
-              <strong>Project C:</strong> Commissioned digital paintings
-            </li>
-          </ul>
-        </div>
-        <div className="page paper">
-          <h2>Experience</h2>
-          <p>
-            With years of experience in illustration, I have worked with
-            authors, game developers, and brands to bring visual concepts to
-            life. My work has been featured in various exhibitions and
-            publications.
-          </p>
-        </div>
+        <div className="page page1"></div>
+        <div className="page page2"></div>
+        <div className="page page3"></div>
       </HTMLFlipBook>
     </div>
   );

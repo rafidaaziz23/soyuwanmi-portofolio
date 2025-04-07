@@ -22,6 +22,12 @@
 
 */
 
+.hero {
+  background-image: url("../assets/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
 body {
   cursor: url("../../public/cursor.png"), auto;
 }
@@ -121,10 +127,10 @@ body {
 }
 
 .dialog {
-  background-image: url("../assets/images/vn-page.png");
+  background-image: url("../assets/images/vn-2.png");
   color: white;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .dialog-box {
@@ -142,4 +148,22 @@ body {
   font-size: 3.5rem;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page1 {
+  background-image: url("../assets/images/book-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page2 {
+  background-image: url("../assets/images/book-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page3 {
+  background-image: url("../assets/images/book-3.png");
+  background-size: cover;
+  background-position: center;
 }
