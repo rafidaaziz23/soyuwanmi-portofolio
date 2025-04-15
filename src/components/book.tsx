@@ -17,14 +17,16 @@ const Book: React.FC = () => {
         // Mobile
         setWidth(250);
         setHeight(330);
+        // setWidth(250); // 280
+        // setHeight(330); // 380
       } else if (screenWidth <= 1024) {
         // Tablet
-        setWidth(350);
-        setHeight(460);
+        setWidth(370); // 350
+        setHeight(500); // 460
       } else if (screenWidth <= 1366) {
         // Laptop 13"
-        setWidth(380);
-        setHeight(500);
+        setWidth(420); // 380
+        setHeight(550); // 500
       } else if (screenWidth <= 1536) {
         // Laptop 15"-16"
         setWidth(485); // 420

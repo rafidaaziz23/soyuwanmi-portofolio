@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 @import "tailwindcss";
 
 /* :root {
@@ -23,17 +23,12 @@
 */
 
 .hero {
-  background-image: url("../assets/images/hero-bg.png");
   background-size: cover;
   background-position: center;
 }
 
-body {
-  cursor: url("../../public/cursor.png"), auto;
-}
-
 .hero-h2 {
-  font-family: "Amatic SC", cursive;
+  font-family: "Gochi Hand", cursive;
   font-weight: 700;
   font-size: 5.5rem;
   margin: 0;
@@ -72,7 +67,7 @@ body {
 }
 
 .cover h1 {
-  font-family: "Amatic SC", cursive;
+  font-family: "Gochi Hand", cursive;
   font-weight: 700;
   font-size: 3.5rem;
   margin: 0;
@@ -80,7 +75,7 @@ body {
 }
 
 .cover p {
-  font-family: "Amatic SC", cursive;
+  font-family: "Gochi Hand", cursive;
   font-weight: 400;
   font-size: 1.8rem;
   margin: 10px 0 0;
@@ -93,14 +88,14 @@ body {
 }
 
 .page h2 {
-  font-family: "Amatic SC", cursive;
+  font-family: "Gochi Hand", cursive;
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
 .page p {
-  font-family: "Amatic SC", cursive;
+  font-family: "Gochi Hand", cursive;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -114,7 +109,7 @@ body {
 }
 
 .page li {
-  font-family: "Amatic SC", cursive;
+  font-family: "Gochi Hand", cursive;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -143,9 +138,9 @@ body {
 }
 
 .typingtext {
-  font-family: "Amatic SC", cursive;
-  font-weight: 700;
-  font-size: 3.5rem;
+  font-family: "Gochi Hand", cursive;
+  font-weight: 300;
+  font-size: 2.5rem;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
