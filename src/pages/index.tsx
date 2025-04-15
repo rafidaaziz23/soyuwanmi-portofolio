@@ -21,14 +21,13 @@ export default function Home() {
 
     const handleMouseEnter = () => {
       if (pinad1 && pinad2) {
-        pinad1.style.opacity = "0";
         pinad2.style.opacity = "1";
       }
     };
 
     const handleMouseLeave = () => {
       if (pinad1 && pinad2) {
-        pinad1.style.opacity = "1";
+        // pinad1.style.opacity = "1";
         pinad2.style.opacity = "0";
       }
     };
