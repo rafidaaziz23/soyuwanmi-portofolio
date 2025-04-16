@@ -16,10 +16,12 @@ export default function Home() {
   const pinad2Ref = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
-    const pinad1 = pinad1Ref.current;
-    const pinad2 = pinad2Ref.current;
+    const pinad1: any = pinad1Ref.current;
+    const pinad2: any = pinad2Ref.current;
 
     const handleMouseEnter = () => {
+      pinad1.style.opacity = "1";
+      pinad2.style.opacity = "2";
       if (pinad1 && pinad2) {
         pinad2.style.opacity = "1";
       }
@@ -90,7 +92,7 @@ export default function Home() {
               src={pinad2}
               alt="Pinad 2"
               width={500}
-              className="absolute "
+              className="absolute"
             />
           </div>
         </div>

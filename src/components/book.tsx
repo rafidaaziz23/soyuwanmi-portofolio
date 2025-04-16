@@ -82,6 +82,9 @@ const Book: React.FC = () => {
         <div className="page page1"></div>
         <div className="page page2"></div>
         <div className="page page3"></div>
+        <div className="page page4"></div>
+        <div className="page page5"></div>
+        <div className="page page6"></div>
       </HTMLFlipBook>
     </div>
   );

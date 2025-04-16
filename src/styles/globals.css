@@ -146,19 +146,34 @@
 }
 
 .page1 {
-  background-image: url("../assets/images/book-1.png");
+  background-image: url("../assets/images/book/aboutme.png");
   background-size: cover;
   background-position: center;
 }
 
 .page2 {
-  background-image: url("../assets/images/book-2.png");
+  background-image: url("../assets/images/book/isyana1.png");
   background-size: cover;
   background-position: center;
 }
 
 .page3 {
-  background-image: url("../assets/images/book-3.png");
+  background-image: url("../assets/images/book/wonderinc2.png");
+  background-size: cover;
+  background-position: center;
+}
+.page4 {
+  background-image: url("../assets/images/book/mai2.png");
+  background-size: cover;
+  background-position: center;
+}
+.page5 {
+  background-image: url("../assets/images/book/mai3.png");
+  background-size: cover;
+  background-position: center;
+}
+.page6 {
+  background-image: url("../assets/images/book/experience.png");
   background-size: cover;
   background-position: center;
 }
