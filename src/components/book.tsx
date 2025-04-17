@@ -25,16 +25,16 @@ const Book: React.FC = () => {
         setHeight(500); // 460
       } else if (screenWidth <= 1366) {
         // Laptop 13"
-        setWidth(420); // 380
-        setHeight(550); // 500
+        setWidth(430); // 380
+        setHeight(560); // 500
       } else if (screenWidth <= 1536) {
         // Laptop 15"-16"
-        setWidth(485); // 420
-        setHeight(635); // 550
+        setWidth(510); // 420
+        setHeight(660); // 550
       } else if (screenWidth <= 1920) {
         // Desktop 24"
-        setWidth(650); //55o
-        setHeight(847.5); //720
+        setWidth(670); //55o
+        setHeight(867.5); //720
       } else {
         // Monitor besar (4K, ultrawide, dll.)
         setWidth(750);
