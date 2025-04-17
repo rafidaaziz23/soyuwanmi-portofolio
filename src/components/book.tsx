@@ -48,6 +48,10 @@ const Book: React.FC = () => {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
+  const pages = Array.from({ length: 42 }, (_, i) => (
+    <div key={i} className={`page page${i + 1}`}></div>
+  ));
+
   return (
     <div className="book-container">
       <HTMLFlipBook
@@ -76,15 +80,9 @@ const Book: React.FC = () => {
         disableFlipByClick={false}
       >
         {/* Cover */}
-        <div className="page cover"></div>
-
+        {/* <div className="page cover"></div> */}
         {/* Page 1 - Introduction */}
-        <div className="page page1"></div>
-        <div className="page page2"></div>
-        <div className="page page3"></div>
-        <div className="page page4"></div>
-        <div className="page page5"></div>
-        <div className="page page6"></div>
+        {pages}
       </HTMLFlipBook>
     </div>
   );

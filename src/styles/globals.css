@@ -146,34 +146,215 @@
 }
 
 .page1 {
-  background-image: url("../assets/images/book/aboutme.png");
+  background-image: url("../assets/images/book/1.png");
   background-size: cover;
   background-position: center;
 }
 
 .page2 {
-  background-image: url("../assets/images/book/isyana1.png");
+  background-image: url("../assets/images/book/2.png");
   background-size: cover;
   background-position: center;
 }
 
 .page3 {
-  background-image: url("../assets/images/book/wonderinc2.png");
+  background-image: url("../assets/images/book/3.png");
   background-size: cover;
   background-position: center;
 }
 .page4 {
-  background-image: url("../assets/images/book/mai2.png");
+  background-image: url("../assets/images/book/4.png");
   background-size: cover;
   background-position: center;
 }
 .page5 {
-  background-image: url("../assets/images/book/mai3.png");
+  background-image: url("../assets/images/book/5.png");
   background-size: cover;
   background-position: center;
 }
 .page6 {
-  background-image: url("../assets/images/book/experience.png");
+  background-image: url("../assets/images/book/6.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page7 {
+  background-image: url("../assets/images/book/7.png");
+  background-size: cover;
+  background-position: center;
+}
+.page8 {
+  background-image: url("../assets/images/book/8.png");
+  background-size: cover;
+  background-position: center;
+}
+.page9 {
+  background-image: url("../assets/images/book/9.png");
+  background-size: cover;
+  background-position: center;
+}
+.page10 {
+  background-image: url("../assets/images/book/10.png");
+  background-size: cover;
+  background-position: center;
+}
+.page11 {
+  background-image: url("../assets/images/book/11.png");
+  background-size: cover;
+  background-position: center;
+}
+.page12 {
+  background-image: url("../assets/images/book/12.png");
+  background-size: cover;
+  background-position: center;
+}
+.page13 {
+  background-image: url("../assets/images/book/13.png");
+  background-size: cover;
+  background-position: center;
+}
+.page14 {
+  background-image: url("../assets/images/book/14.png");
+  background-size: cover;
+  background-position: center;
+}
+.page15 {
+  background-image: url("../assets/images/book/15.png");
+  background-size: cover;
+  background-position: center;
+}
+.page16 {
+  background-image: url("../assets/images/book/16.png");
+  background-size: cover;
+  background-position: center;
+}
+.page17 {
+  background-image: url("../assets/images/book/17.png");
+  background-size: cover;
+  background-position: center;
+}
+.page18 {
+  background-image: url("../assets/images/book/18.png");
+  background-size: cover;
+  background-position: center;
+}
+.page19 {
+  background-image: url("../assets/images/book/19.png");
+  background-size: cover;
+  background-position: center;
+}
+.page20 {
+  background-image: url("../assets/images/book/20.png");
+  background-size: cover;
+  background-position: center;
+}
+.page21 {
+  background-image: url("../assets/images/book/21.png");
+  background-size: cover;
+  background-position: center;
+}
+.page22 {
+  background-image: url("../assets/images/book/22.png");
+  background-size: cover;
+  background-position: center;
+}
+.page23 {
+  background-image: url("../assets/images/book/23.png");
+  background-size: cover;
+  background-position: center;
+}
+.page24 {
+  background-image: url("../assets/images/book/24.png");
+  background-size: cover;
+  background-position: center;
+}
+.page25 {
+  background-image: url("../assets/images/book/25.png");
+  background-size: cover;
+  background-position: center;
+}
+.page26 {
+  background-image: url("../assets/images/book/26.png");
+  background-size: cover;
+  background-position: center;
+}
+.page27 {
+  background-image: url("../assets/images/book/27.png");
+  background-size: cover;
+  background-position: center;
+}
+.page28 {
+  background-image: url("../assets/images/book/28.png");
+  background-size: cover;
+  background-position: center;
+}
+.page29 {
+  background-image: url("../assets/images/book/29.png");
+  background-size: cover;
+  background-position: center;
+}
+.page30 {
+  background-image: url("../assets/images/book/30.png");
+  background-size: cover;
+  background-position: center;
+}
+.page31 {
+  background-image: url("../assets/images/book/31.png");
+  background-size: cover;
+  background-position: center;
+}
+.page32 {
+  background-image: url("../assets/images/book/32.png");
+  background-size: cover;
+  background-position: center;
+}
+.page33 {
+  background-image: url("../assets/images/book/33.png");
+  background-size: cover;
+  background-position: center;
+}
+.page34 {
+  background-image: url("../assets/images/book/34.png");
+  background-size: cover;
+  background-position: center;
+}
+.page35 {
+  background-image: url("../assets/images/book/35.png");
+  background-size: cover;
+  background-position: center;
+}
+.page36 {
+  background-image: url("../assets/images/book/36.png");
+  background-size: cover;
+  background-position: center;
+}
+.page37 {
+  background-image: url("../assets/images/book/37.png");
+  background-size: cover;
+  background-position: center;
+}
+.page38 {
+  background-image: url("../assets/images/book/38.png");
+  background-size: cover;
+  background-position: center;
+}
+.page39 {
+  background-image: url("../assets/images/book/39.png");
+  background-size: cover;
+  background-position: center;
+}
+.page40 {
+  background-image: url("../assets/images/book/40.png");
+  background-size: cover;
+  background-position: center;
+}
+.page41 {
+  background-image: url("../assets/images/book/41.png");
+  background-size: cover;
+  background-position: center;
+}
+.page42 {
+  background-image: url("../assets/images/book/42.png");
   background-size: cover;
   background-position: center;
 }
