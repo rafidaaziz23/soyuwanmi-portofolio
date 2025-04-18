@@ -48,7 +48,7 @@ const Book: React.FC = () => {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  const pages = Array.from({ length: 48 }, (_, i) => (
+  const pages = Array.from({ length: 50 }, (_, i) => (
     <div key={i} className={`page page${i + 1}`}></div>
   ));
 
