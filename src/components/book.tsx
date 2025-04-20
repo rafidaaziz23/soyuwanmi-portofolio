@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
 // import "../styles/book.css";
 // import "../styles/globals.css";
+interface BookProps {
+  mobile: boolean;
+}
 
 const Book: React.FC = () => {
   const [width, setWidth] = useState(399);

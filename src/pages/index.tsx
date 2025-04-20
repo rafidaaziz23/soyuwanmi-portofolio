@@ -157,7 +157,7 @@ export default function Home() {
               texts={[
                 "Hello! I'm Nadya but you can call me Soyu!",
                 "I'm a passionate creative with a love for Illustration and design",
-                "This portfolio is a collection of my works, experiencesy",
+                "This portfolio is a collection of my works and experiences",
                 "lets dive in!",
               ]}
               typingSpeed={40}
@@ -212,7 +212,7 @@ export default function Home() {
         </div>
 
         {/* contactme4 - tengah agak ke kanan + hover scale */}
-        <div className="absolute top-1/2 right-1/3 transform -translate-y-1/2   transition-transform duration-300 hover:scale-110 w-[10vw]">
+        <div className="absolute top-1/3 right-1/3  w-[13vw]">
           <Image src={contactme4} alt="contactme4" layout="responsive" />
         </div>
 
