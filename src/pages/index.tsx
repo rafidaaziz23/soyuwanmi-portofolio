@@ -25,6 +25,22 @@ export default function Home() {
   const [hasUserInteracted, setHasUserInteracted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [showContactForm, setShowContactForm] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [showMobileWarning, setShowMobileWarning] = useState(true);
+
+  // Add mobile detection
+  useEffect(() => {
+    const checkMobile = () => {
+      const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+      setIsMobile(isMobileDevice);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Add this new component near the top of the return statement
 
   // Handle interaksi pertama
   useEffect(() => {
@@ -85,6 +101,26 @@ export default function Home() {
 
   return (
     <main className="w-full">
+        {isMobile && showMobileWarning && (
+    <div className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="bg-[#f5ece1] rounded-2xl p-8 max-w-md text-center border-4 border-[#6b5b4d]">
+        <h2 className="text-2xl font-bold mb-4 text-[#6b5b4d]">
+          📱 Mobile Device Detected
+        </h2>
+        <p className="mb-6 text-[#6b5b4d]">
+          For the best experience, we recommend viewing this portfolio on a desktop or laptop computer.
+        </p>
+        <div className="flex gap-4 justify-center">
+          <button
+            onClick={() => setShowMobileWarning(false)}
+            className="px-6 py-2 bg-[#6b5b4d] text-[#f5ece1] rounded-full hover:bg-[#8a7665] transition-colors"
+          >
+            Continue Anyway
+          </button>
+        </div>
+      </div>
+    </div>
+  )}
       {/* Audio element */}
       <audio ref={audioRef} loop muted={isMuted}>
         <source src="/music/dreamy_sparks.mp3" type="audio/mpeg" />
