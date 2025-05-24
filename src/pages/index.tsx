@@ -370,7 +370,7 @@ export default function Home() {
 
                   {/* Email */}
                   <a
-                    href="https://mail.google.com/mail/?view=cm&to=soyuwanmi@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&to=nadyatjandra04@gmail.com"
                     className="flex items-center p-4 bg-[#f5ece1] rounded-lg hover:bg-[#e0ccbc] transition-colors border border-[#6b5b4d]"
                   >
                     <svg
@@ -382,7 +382,7 @@ export default function Home() {
                     </svg>
                     <div>
                       <p className="font-bold text-[#6b5b4d]">Email</p>
-                      <p className="text-sm">soyuwanmi@gmail.com</p>
+                      <p className="text-sm">nadyatjandra04@gmail.com</p>
                     </div>
                   </a>
 
